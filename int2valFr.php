@@ -105,7 +105,7 @@ function int2valMil($value){
 		if($milPart < 100 && $milPart != 1){
 			$res = int2val100($milPart);
 		}
-		if($milPart < 1000){
+		elseif($milPart < 1000){
 			$res = int2val1000($milPart);
 		}
 		$res.=" mille ";
