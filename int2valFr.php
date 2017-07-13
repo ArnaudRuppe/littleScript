@@ -124,7 +124,6 @@ function int2valMil($value){
 function int2valRest($value){
 	//We returieve the value over the milion
 	$valueOMil = substr($value,0, -6);
-	echo $valueOMil;
 	$res = int2valFr($valueOMil);
 	$res .=" milion";
 	//We retrieve the valune under the milion
